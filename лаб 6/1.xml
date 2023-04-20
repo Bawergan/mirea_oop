@@ -1,0 +1,26 @@
+<enrolles>
+    <enrolle id="1">
+        <name>Gavrilushkin</name>
+        <math>74</math>
+        <russian>78</russian>
+        <informatics>84</informatics>
+    </enrolle>
+    <enrolle id="2">
+        <name>Sidelev</name>
+        <math>0</math>
+        <russian>95</russian>
+        <informatics>50</informatics>
+    </enrolle>
+    <enrolle id="3">
+        <name>Visheneev</name>
+        <math>50</math>
+        <russian>50</russian>
+        <informatics>50</informatics>
+    </enrolle>
+    <enrolle id="4">
+        <name>Bogoslovskiy</name>
+        <math>3</math>
+        <russian>1</russian>
+        <informatics>123</informatics>
+    </enrolle>
+</enrolles>

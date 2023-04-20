@@ -4,4 +4,3 @@ b = 34
 a, b = b, a
 
 print(f'a = {a}, b = {b}')
-
