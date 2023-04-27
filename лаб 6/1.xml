@@ -3,7 +3,7 @@
         <name>Gavrilushkin</name>
         <math>74</math>
         <russian>78</russian>
-        <informatics>84</informatics>
+        <informatics>123</informatics>
     </enrolle>
     <enrolle id="2">
         <name>Sidelev</name>
@@ -19,8 +19,8 @@
     </enrolle>
     <enrolle id="4">
         <name>Bogoslovskiy</name>
-        <math>3</math>
-        <russian>1</russian>
+        <math>33</math>
+        <russian>24</russian>
         <informatics>123</informatics>
     </enrolle>
-<enrolles>
+</enrolles>
