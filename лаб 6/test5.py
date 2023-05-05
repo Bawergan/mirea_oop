@@ -1,3 +1,3 @@
-i = range(100)
-for i in i: print (i)
-print(i)
+for i in range(100):
+    if 5 > i > 10:
+        print(i)

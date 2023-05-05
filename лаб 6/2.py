@@ -18,10 +18,10 @@ def BuildGraph(xmin, xmax, funct):
     print (xmin, xmax, funct)
 
 def clicked():
-    try:
-        xmin = int(xmin_.get())
-        xmax = int(xmax_.get())
-    except: xmin, xmax = 0, 0
+    try: xmin = int(xmin_.get())
+    except: xmin = 0
+    try: xmax = int(xmax_.get())
+    except: xmax = 0
     
     funct = funct_.get()
 

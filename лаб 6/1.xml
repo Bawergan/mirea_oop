@@ -7,9 +7,9 @@
     </enrolle>
     <enrolle id="2">
         <name>Sidelev</name>
-        <math>0</math>
-        <russian>95</russian>
-        <informatics>50</informatics>
+        <math />
+        <russian />
+        <informatics>1</informatics>
     </enrolle>
     <enrolle id="3">
         <name>Visheneev</name>
@@ -19,8 +19,8 @@
     </enrolle>
     <enrolle id="4">
         <name>Bogoslovskiy</name>
-        <math>33</math>
-        <russian>24</russian>
-        <informatics>123</informatics>
+        <math />
+        <russian />
+        <informatics>1</informatics>
     </enrolle>
 </enrolles>

@@ -13,7 +13,7 @@ for student in root.findall('student'):
     full_names.append(student.get('name'))
 
 for i in set(names): 
-    d[i] = names.count(i) 
+    d[i] = names.count(i) - 1 
 
 for student in full_names:
     print(student, '; Однофамильцев:', d[student.split(' ')[0]])

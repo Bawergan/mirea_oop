@@ -28,10 +28,10 @@ for i in json_data["apartments"]:
         last_year_adds.append(i["address"])
     
 
-print(apartments_costs_above)
+print('2.1:', apartments_costs_above)
 try: 
-    print(sum(apartments_square_costs_in_district) / len(apartments_square_costs_in_district))
+    print('2.2:', sum(apartments_square_costs_in_district) / len(apartments_square_costs_in_district))
 except: ...
-print(apartments_in_task_2_3)
-
-print(dt.datetime.now() - i_date)
+print('2.3:', apartments_in_task_2_3)
+print('2.4:', last_year_adds)
+print('2.5', dt.datetime.now() - i_date)
