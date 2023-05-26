@@ -42,7 +42,7 @@ plt.show()
 
 width = 0.3
 plt.bar([i - width for i in range(len(y))], payment_max, width, color = 'red')
-plt.bar([i for i in range(len(y))], x, width, color = 'green')
+#plt.bar([i for i in range(len(y))], x, width, color = 'green')
 plt.bar([i + width for i in range(len(y))], payment_min, width, color = 'blue')
 plt.xticks([i for i in range(len(y))], y)
 plt.xlabel('workers')

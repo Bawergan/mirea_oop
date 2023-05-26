@@ -1,8 +1,4 @@
 class client:
-    __balance = 0
-    sername, name, = '', '' 
-    age = 0
-
     def __init__(self, sername, name, age, balance):
         self.sername = sername
         self.name = name
@@ -17,14 +13,22 @@ class client:
     
     def __EditBalance(self, sum):
         self.__balance += sum
+        print(f'{self.name} edited: {sum}\n')
     
     def Validator(self, sum):
         return (self.__balance + sum) >= 0        
     
     def OperationManager(self, sum):
+        print(f'from {self.name} asked operation {sum}')
         if self.Validator(sum): self.__EditBalance(sum)
-        else: print('Operation invalid')
+        else: print(f'Operation {sum} invalid')
     
+    def Transaction(self, clientToTransaction, sum, commisionPersent = 10):
+        print (f'from {self.name} to {clientToTransaction.name} asked transaction {sum}, {commisionPersent}%')
+        if self.Validator(-sum):
+            self.OperationManager(-sum)
+            clientToTransaction.OperationManager(transaction(sum).Commision(commisionPersent))
+        else: print(f'Transaction {sum} invalid')
 
 class transaction:
     transactionSum = 0
@@ -39,9 +43,22 @@ class transaction:
 sergey = client(sername='Gavrilushkin', name='Sergey', age=10, balance=100)
 print(sergey.Info())
 
-sergey.OperationManager(transaction(-200).Commision(10))
-print(sergey.Info())
+sergey.OperationManager(50)
+print('balance:', sergey.Info()['balance'])
 
-sergey.OperationManager(100)
-sergey.OperationManager(transaction(-200).Commision(10))
+sergey.OperationManager(-25)
+print('balance:', sergey.Info()['balance'])
+
+andrey = client(sername='', name='andrey', age=18, balance=100)
+
 print(sergey.Info())
+print(andrey.Info())
+
+
+andrey.OperationManager(1000)
+
+andrey.Transaction(clientToTransaction=andrey, sum=1000)
+
+
+print(sergey.Info())
+print(andrey.Info())
